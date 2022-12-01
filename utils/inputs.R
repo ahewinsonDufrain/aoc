@@ -32,3 +32,11 @@ standard_parse_text <- function(x) {
 standard_parse_number <- function(x) {
   x %>% standard_parse_text %>% as.numeric()
 }
+
+split_double_line_break <- function(x) {
+  x %>% 
+    str_split("(\r*\n){2,}") %>% 
+    unlist() %>% 
+    lapply(str_split, "\r*\n") %>% 
+    lapply(unlist)
+}
