@@ -1,8 +1,7 @@
 library(tidyverse)
 library(magrittr)
 
-source("utils/inputs.R")
-source("utils/printing.R")
+source("utils/all_utils.R")
 readInputs(2022)
 day <- 2
 
