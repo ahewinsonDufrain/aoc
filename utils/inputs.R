@@ -33,6 +33,10 @@ standard_parse_number <- function(x) {
   x %>% standard_parse_text %>% as.numeric()
 }
 
+standard_parse_scan <- function(x) {
+  x %>% standard_parse_text %>% str_split(",") %>% unlist() %>% as.integer()
+}
+
 split_double_line_break <- function(x) {
   x %>% 
     str_split("(\r*\n){2,}") %>% 
