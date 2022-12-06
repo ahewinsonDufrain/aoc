@@ -49,10 +49,6 @@ stevedor9001 <- function(x) {
   
 }
 
-# test5 %>% stevedor() %>% print()
-# #input5 %>% stevedor() %>% print()
-# stop(98)
-
 # part a ------------------------------------------------------------------
 ## solve function for part a
 solve5a <- function(inp) {
